@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Odtwarzacz muzyki</title>
+        <link rel="stylesheet" href="style3.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Krzyżówka na dziś</h1>
+            <div class="player">
+                <iframe
+                    width="1000"
+                    height="800"
+                    style="
+                        border: 3px solid black;
+                        margin: auto;
+                        display: block;
+                    "
+                    frameborder="0"
+                    src="https://crosswordlabs.com/embed/2025-09-30-335"
+                ></iframe>
+            </div>
+            <button id="back-btn">⬅ Wróć</button>
+        </div>
+
+        <script>
+            const backBtn = document.getElementById("back-btn");
+            backBtn.addEventListener("click", () => {
+                history.back(); // wraca do poprzedniej strony
+            });
+        </script>
+    </body>
+</html>

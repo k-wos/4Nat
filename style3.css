@@ -1,0 +1,42 @@
+/* ---- Proste tło i wyśrodkowanie ---- */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #121212; /* ciemne tło dla kontrastu */
+}
+.container{
+    text-align: center;
+}
+.player-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+    text-align: center;
+    color: aliceblue;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(255, 118, 140, 0.4);
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 118, 140, 0.5);
+}
